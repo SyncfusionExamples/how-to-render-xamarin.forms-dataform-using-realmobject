@@ -22,7 +22,7 @@ namespace DataFormRealmObject
         public string Address { get; set; }
         
         [Display(Name = "Birth Date")]
-        public DateTimeOffset? BirthDate { get; set; }
+        public DateTime BirthDate { get; set; }
     }
 }
 

@@ -22,6 +22,7 @@ namespace DataFormRealmObject
                 contactin.Email = "rex@hotmail.com";
                 contactin.ContactNumber = "199-1234";
                 contactin.Address = "Sout cross street";
+                contactin.BirthDate = new DateTime(1996, 04, 13);
             });
 
         }
