@@ -1,2 +1,2 @@
-# how-to-render-xamarin.forms-dataform-using-realmobject
+# How to render Xamarin.Forms DataForm using RealmObject
 This example demonstrates to render Xamarin.Forms DataForm using RealmObject.
