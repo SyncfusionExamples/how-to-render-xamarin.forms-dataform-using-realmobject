@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:DataFormRealmObject"
+             xmlns:dataForm ="clr-namespace:Syncfusion.XForms.DataForm;assembly=Syncfusion.SfDataForm.XForms"
+             x:Class="DataFormRealmObject.MainPage">
+    <ContentPage.Behaviors>
+        <local:DataFormBehavior/>
+    </ContentPage.Behaviors>
+    <ContentPage.BindingContext>
+       <local:ViewModel x:Name="viewModel"/>
+    </ContentPage.BindingContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.9*"/>
+        </Grid.RowDefinitions>
+        <dataForm:SfDataForm x:Name="dataForm" DataObject="{Binding Contact}" Grid.Row="0"/>
+    </Grid>
+</ContentPage>
