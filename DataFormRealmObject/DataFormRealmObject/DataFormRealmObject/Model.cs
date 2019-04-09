@@ -20,9 +20,35 @@ namespace DataFormRealmObject
         public string Email { get; set; }
 
         public string Address { get; set; }
-        
+
         [Display(Name = "Birth Date")]
-        public DateTime BirthDate { get; set; }
+        private DateTime? birthDate;
+        [DataType(DataType.Date)]
+        public DateTime? BirthDate
+        {
+            get
+            {
+                return birthDate;
+            }
+            set
+            {
+                birthDate = value;
+            }
+        }
+        private DateTime? birthTime;
+        [DataType(DataType.Time)]
+        public DateTime? BirthTime
+        {
+            get
+            {
+                return birthTime;
+            }
+            set
+            {
+                birthTime = value;
+            }
+        }
     }
 }
+
 
