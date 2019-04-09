@@ -21,8 +21,9 @@ namespace DataFormRealmObject
 
         public string Address { get; set; }
 
-        [Display(Name = "Birth Date")]
         private DateTime? birthDate;
+
+        [Display(Name = "Birth Date")]
         [DataType(DataType.Date)]
         public DateTime? BirthDate
         {
@@ -36,6 +37,8 @@ namespace DataFormRealmObject
             }
         }
         private DateTime? birthTime;
+
+        [Display(Name = "Birth Time")]
         [DataType(DataType.Time)]
         public DateTime? BirthTime
         {
