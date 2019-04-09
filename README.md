@@ -10,3 +10,5 @@ This example demonstrates to render Xamarin.Forms DataForm using RealmObject.
 ## <a name="troubleshooting"></a>Troubleshooting ##
 ### Path too long exception
 If you are facing path too long exception when building this example project, close Visual Studio and rename the repository to short and build the project.
+### DateTimeOffset property isn’t set to Date and Time editor.  
+If you are facing the above error when bulilding this example in VS2019 , please check the given link from our UG to resolve it [Converter](https://help.syncfusion.com/xamarin/sfdataform/editing#converter).
